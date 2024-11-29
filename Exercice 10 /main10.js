@@ -1,3 +1,5 @@
+// Variables creation
+
 var compteur = 0;
 var compteur2 = 0;
 
@@ -10,6 +12,7 @@ MaDiv2.addEventListener("mouseover",UneProcedureQuiSurvole);
 var MaDiv3 = document.getElementById("Methode4");
 MaDiv3.addEventListener("keydown",UneProcedureQuiEcrit);
 
+// functions creation
 
 function UneProcedureQuiEcrit(evenement){
     evenement.target.innerHTML="On a appuyé sur : "+evenement.key;
@@ -17,12 +20,12 @@ function UneProcedureQuiEcrit(evenement){
 
 function UneProcedureQuiChangeLeTexte(evenement){
     compteur++;
-    evenement.target.innerHTML = "On m'as cliqué dessus "+compteur+" fois";
+    evenement.target.innerHTML = "On m'a cliqué dessus "+compteur+" fois";
     MaDiv1.className="divC"
 }
 
 function UneProcedureQuiSurvole(evenement){
     compteur2++;
-    evenement.target.innerHTML = "On m'as survolé "+compteur2+" fois";
+    evenement.target.innerHTML = "On m'a survolé "+compteur2+" fois";
     MaDiv2.className="divB"
 }
